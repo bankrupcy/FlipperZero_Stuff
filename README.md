@@ -5,6 +5,16 @@ My Flipper Zero Creations: [Guides](Guides) -- [BadUSB Payloads](BadUSB) -- [Rem
 
 My collection of IR, Sub-Ghz, remotes, links and other misc files related to the [Flipper Zero](https://www.flipperzero.one/) device
 
+## Contents
+- [Firmware](#firmware)
+- [Instructions / Documentation / Forums](#instructions--documentation--forums)
+- [Plugin / Development](#plugin--development)
+- [Flipper Tools & Apps](#flipper-tools--apps)
+- [External Hardware: Plugins](#external-hardware-plugins)
+- [Sub-Ghz, Remotes, IR, Files, Databases & Dumps](#sub-ghz-remotes-ir-files-databases--dumps)
+- [BadUSB Stuff](#badusb-stuff)
+- [Off-device & Debugging](#off-device--debugging)
+
 
 ## Firmware
 [Flipper Zero](https://github.com/flipperdevices/flipperzero-firmware) -- Official Flipper Zero firmware
@@ -12,13 +22,12 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 
 ### Custom  
 [Momentum](https://awesome-flipper.com/firmware/momentum/)  -- Based on the Official Firmware, and includes most of the awesome features from Unleashed. It is a direct continuation of the Xtreme firmware, built by the same (and only) developers who made that project special.  
-[Rouge Master](https://github.com/RogueMaster/flipperzero-firmware-wPlugins) -- Fork of Unleashed and the main Flipper Devices FW  
+[Rogue Master](https://github.com/RogueMaster/flipperzero-firmware-wPlugins) -- Fork of Unleashed and the main Flipper Devices FW  
 [Unleashed Firmware](https://github.com/DarkFlippers/unleashed-firmware) --  Based on the official firmware and is suitable for those who already know what they need and what the official firmware does not provide. Minimal changes in the interface, the emphasis is on functional and useful changes. 
 
 ### Outdated / Unmaintained  
 ~~[Flipper Xtreme](https://github.com/ClaraCrazy/Flipper-Xtreme) -- The goal of this Firmware is to regularly bring out amazing updates based on what the community wants, with an actual understanding of whats going on. Fixing bugs that are regularly talked about, removing unstable / broken applications (.FAP) and actually using the level system that just sits abandoned everywhere else.~~   
-[Dexv](https://github.com/DXVVAY/Dexvmaster0) -- Flipper-Xtreme fork  
-[SquachWare](https://github.com/skizzophrenic/SquachWare-CFW) -- Flipper Zero Official fork. Adds Custom Graphics, Community apps and misc files  
+~~[SquachWare](https://github.com/skizzophrenic/SquachWare-CFW) -- Flipper Zero Official fork. Adds Custom Graphics, Community apps and misc files~~  
 
  
  
@@ -27,13 +36,13 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 [Flipper Zero](https://docs.flipperzero.one/)  -- Official Documentation  
 [Firmware Recovery](https://docs.flipperzero.one/basics/firmware-update/firmware-recovery) -- Troubleshooting firmware problems  
 [Battery Troubleshooting](https://cdn.flipperzero.one/self-repair-guide.pdf) -- Troubleshooting battery problems  
-[Unofficial Community Wiki](https://flipperzero.miraheze.org/wiki/Main_Page)  
+[Awesome Flipper Zero](https://awesome-flipper.com/) -- Community-curated hub of firmware, apps, guides, and resources  
 [How to Upload .bin to ESP32/ESP8266](https://github.com/SequoiaSan/Guide-How-To-Upload-bin-to-ESP8266-ESP32) -- Guide on how to upload precompiled bin files to ESP8266/ESP32  
 [Using FlipperZeros GPIOs to Crack A Sentry Safe](https://github.com/DarkFlippers/unleashed-firmware/blob/dev/documentation/SentrySafe.md) -- Using Flipper zero to exploit a vulnerability to open any Sentry Safe and Master Lock electronic safe without the need for a pin code.  
 [Reset Forgotten PIN](https://gist.github.com/djsime1/18d73b981249859f17aab3e2bfd2b600) - How to reset your device's PIN code  
 [Flipper Zero Hacking 101](https://flipper.pingywon.com/) --  Guides with screenshots, files, and general help.  
 [Flipper Zero GPIO Pinout](https://miro.com/app/board/uXjVO_LaYYI=/?moveToWidget=3458764522696947614&cot=10) -- Official GPIO pinouts.  
-[Flipper Zero Disasembly Guide](https://www.ifixit.com/Guide/Flipper+Zero+Disassembly/151455) -- Difficulty: Moderate, Time: 8-15 Minutes. [Video](https://youtu.be/38pHe7M4vl8)  
+[Flipper Zero Disassembly Guide](https://www.ifixit.com/Guide/Flipper+Zero+Disassembly/151455) -- Difficulty: Moderate, Time: 8-15 Minutes. [Video](https://youtu.be/38pHe7M4vl8)  
 [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder/wiki/flipper-zero) -- Portable Wifi / Bluetooth penetration testing -- [Video](https://youtu.be/_YLTpNo5xa0)  
 
 
@@ -52,7 +61,7 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 [FlipperZero CLI Tools](https://github.com/lomalkin/flipperzero-cli-tools) -- Python scripts to screenshot/stream the flipper zero screen  
 [Viewing System Logs](https://gist.github.com/jaflo/50c35c46f3ecada7a18c9e5cc203a3f8) -- Dump system logs to serial CLI  
 [FlipperZero-bruteforce](https://github.com/tobiabocchi/flipperzero-bruteforce) -- Generate .sub files to brute force Sub-GHz OOK.  
-[T119 Brute Forcer](https://github.com/xb8/t119bruteforcer) -- Triggers Retekess T119 restaraunt pagers  
+[T119 Brute Forcer](https://github.com/xb8/t119bruteforcer) -- Triggers Retekess T119 restaurant pagers  
 [SerialHex2FlipperZeroInfrared](https://github.com/maehw/SerialHex2FlipperZeroInfrared) - Convert IR serial messages into FlipperZero compatible IR files  
 [Spectrum Analyzer](https://github.com/jolcese/flipperzero-firmware/tree/spectrum/applications/spectrum_analyzer) -- Sub-Ghz spectrum analyzer  
 [OOK to .sub](https://gist.github.com/jinschoi/f39dbd82e4e3d99d32ab6a9b8dfc2f55) -- Python script to generate Flipper RAW .sub files from OOK bitstreams.  
@@ -74,13 +83,8 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 [Sentry Safe Crack](https://github.com/H4ckd4ddy/flipperzero-sentry-safe-plugin) - Flipper zero exploiting vulnerability to open any Sentry Safe and Master Lock electronic safe without any pin code.  
 [FlipperZero-GPS](https://github.com/ezod/flipperzero-gps) -- Display data from a serial GPS module  
 
-[]()
-[]()
-[]()
-[]()
 
-
-## Sub-Ghz, Remotes, IR, Files, Databases & Dumps etc..
+## Sub-Ghz, Remotes, IR, Files, Databases & Dumps
 
 [UberGuidoZ Playground - Large collection of files - Github](https://github.com/UberGuidoZ/Flipper) -- Large collection of files, documentation, and dumps of all kinds.  
 [Awesome Flipper Zero](https://github.com/djsime1/awesome-flipperzero) -- A collection of Awesome resources for the Flipper Zero device.  
@@ -108,5 +112,10 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 
 ## Off-device & Debugging
 
-[Official Web Interface](https://lab.flipper.net/) -- Web interface to interact with Flipper, including Paint and SUB/IR analyzer.
+[Official Web Interface](https://lab.flipper.net/) -- Web interface to interact with Flipper, including Paint and SUB/IR analyzer.  
+[qFlipper](https://flipperzero.one/update) -- Official cross-platform desktop app: firmware updates, file manager, and screen streaming.  
+[Flipper Apps Catalog](https://lab.flipper.net/apps) -- Official catalog of installable Flipper apps (.fap), browsable and installable over the web.  
 
+
+## License
+Link collection -- all linked projects and resources belong to their respective authors. Original files in this repo (Guides, BadUSB payloads, Remote UIs) are provided as-is for educational use.

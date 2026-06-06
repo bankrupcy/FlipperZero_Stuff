@@ -3,9 +3,10 @@ My Flipper Zero Creations: [Guides](Guides) -- [BadUSB Payloads](BadUSB) -- [Rem
 
 ![A FlipperZero Dolphin image](https://thumb.tildacdn.com/tild3139-3163-4538-b437-643239623131/-/resize/690x/-/format/webp/fpr_web_1.jpg)
 
-My collection of IR, Sub-Ghz, remotes, links and other misc files related to the [Flipper Zero](https://www.flipperzero.one/) device
+My collection of IR, Sub-Ghz, remotes, links and other misc files related to the [Flipper Zero](https://flipper.net/) device
 
 ## Contents
+- [In This Repo (my files)](#in-this-repo-my-files)
 - [Firmware](#firmware)
 - [Instructions / Documentation / Forums](#instructions--documentation--forums)
 - [Plugin / Development](#plugin--development)
@@ -14,6 +15,23 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 - [Sub-Ghz, Remotes, IR, Files, Databases & Dumps](#sub-ghz-remotes-ir-files-databases--dumps)
 - [BadUSB Stuff](#badusb-stuff)
 - [Off-device & Debugging](#off-device--debugging)
+
+
+## In This Repo (my files)
+Original files I've made — as opposed to the curated outbound links further down.
+
+### [Guides](Guides)
+- **[Creating a Custom Infrared Remote UI](Guides/Infrared%20Remote%20UI.md)** -- walkthrough for building a custom IR remote interface on the device (`Apps -> Tools -> IR Remote`).
+
+### [BadUSB Payloads](BadUSB)
+- **[Send a message via Signal Desktop](BadUSB)** -- sends a message from the target PC via Signal Desktop, if installed.
+- **[Disable Firewall & Create Admin User](BadUSB)** -- disables the local firewall and adds an admin user.
+- **[Information Stealer](BadUSB)** -- gathers host / user info, installed programs & updates, wireless profiles, a screen capture, the Firefox profile, and SAM hives; exfils via email.
+
+> ⚠️ BadUSB payloads are for authorized testing and education only. Don't run them on devices you don't own or have permission to test.
+
+### [Remotes](Remotes)
+- **[Custom Infrared Remote UI](Remotes/Infrared/remote)** -- example custom remote UI built from a captured IR controller (Arizer XQ2).
 
 
 ## Firmware
@@ -33,8 +51,8 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
  
  
 ## Instructions / Documentation / Forums
-[Flipper Zero](https://docs.flipperzero.one/)  -- Official Documentation  
-[Firmware Recovery](https://docs.flipperzero.one/basics/firmware-update/firmware-recovery) -- Troubleshooting firmware problems  
+[Flipper Zero](https://docs.flipper.net/zero)  -- Official Documentation  
+[Firmware Recovery](https://docs.flipper.net/zero/basics/firmware-update/firmware-recovery) -- Troubleshooting firmware problems  
 [Battery Troubleshooting](https://cdn.flipperzero.one/self-repair-guide.pdf) -- Troubleshooting battery problems  
 [Awesome Flipper Zero](https://awesome-flipper.com/) -- Community-curated hub of firmware, apps, guides, and resources  
 [How to Upload .bin to ESP32/ESP8266](https://github.com/SequoiaSan/Guide-How-To-Upload-bin-to-ESP8266-ESP32) -- Guide on how to upload precompiled bin files to ESP8266/ESP32  
@@ -42,7 +60,7 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 [Reset Forgotten PIN](https://gist.github.com/djsime1/18d73b981249859f17aab3e2bfd2b600) - How to reset your device's PIN code  
 [Flipper Zero Hacking 101](https://flipper.pingywon.com/) --  Guides with screenshots, files, and general help.  
 [Flipper Zero GPIO Pinout](https://miro.com/app/board/uXjVO_LaYYI=/?moveToWidget=3458764522696947614&cot=10) -- Official GPIO pinouts.  
-[Flipper Zero Disassembly Guide](https://www.ifixit.com/Guide/Flipper+Zero+Disassembly/151455) -- Difficulty: Moderate, Time: 8-15 Minutes. [Video](https://youtu.be/38pHe7M4vl8)  
+[Flipper Zero Disassembly Guide](https://www.ifixit.com/Teardown/Flipper+Zero+Teardown/151455) -- Difficulty: Moderate, Time: 8-15 Minutes. [Video](https://youtu.be/38pHe7M4vl8)  
 [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder/wiki/flipper-zero) -- Portable Wifi / Bluetooth penetration testing -- [Video](https://youtu.be/_YLTpNo5xa0)  
 
 
@@ -69,12 +87,12 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 [fzfs](https://github.com/dakhnod/fzfs) -- Flipper Zero filesystem driver  
 [csv2ir](https://github.com/Spexivus/csv2ir) -- Convert IRDB CSV's into Flipper .ir format  
 [dolphin_state.py](https://github.com/DroomOne/FlipperScripts) -- Reads/Writes the DolphinStoreData struct from dolphin.state files.  
-[MusicXML to Flipper Music Format](https://github.com/white-gecko/musicxml2fmf0) -- This script reads a (not compressed) [MusicXML](https://en.wikipedia.org/wiki/MusicXML) file and transforms it to the Flipper Music Format  
+[MusicXML to Flipper Music Format](https://github.com/white-gecko/musicxml2fmf) -- This script reads a (not compressed) [MusicXML](https://en.wikipedia.org/wiki/MusicXML) file and transforms it to the Flipper Music Format  
 
 ## External Hardware: Plugins
 
 [Add-on Modules](https://github.com/UberGuidoZ/Flipper/tree/main/GPIO) -- (ESP32, ESP8266, ESP32-CAM, ESP32-S2 WROVER, NRF24, Raspberry PI UART etc..)  
-[i2c tools](https://github.com/DarkFlippers/unleashed-firmware/blob/dev/applications/external/flipper_i2ctools/README.md) -- Guide on using FlipperZeros i2c tools  
+[i2c tools](https://github.com/xMasterX/all-the-plugins/blob/dev/base_pack/flipper_i2ctools/README.md) -- Guide on using FlipperZeros i2c tools  
 [WiFi Scanner](https://github.com/SequoiaSan/FlipperZero-WiFi-Scanner_Module#readme) -- WiFi Scanner Module for FlipperZero based on ESP8266/ESP32 (results with ESP8266 much better than with ESP32)  
 [WiFi Scanner Module Flasher Tool](https://sequoiasan.github.io/FlipperZero-WiFi-Scanner_Module/) -- Sequoia has been kind enough to create a web flasher for the modules, if you want to avoid having to use the Arduino IDE.  
 [ESP32 - Wifi Marauder](https://github.com/UberGuidoZ/Flipper/tree/main/Wifi_DevBoard) -- ESP32 Wi-Fi Pentest Tool  
@@ -89,7 +107,7 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 [UberGuidoZ Playground - Large collection of files - Github](https://github.com/UberGuidoZ/Flipper) -- Large collection of files, documentation, and dumps of all kinds.  
 [Awesome Flipper Zero](https://github.com/djsime1/awesome-flipperzero) -- A collection of Awesome resources for the Flipper Zero device.  
 [FlipperZero-TouchTunes](https://github.com/jimilinuxguy/flipperzero-touchtunes) -- TouchTunes remote dump  
-[Universal Intercom Keys](https://github.com/GlUTEN-BASH/Flipper-Starnew) -- Universal Intercom Keys  
+[Universal Intercom Keys](https://github.com/glutesha/Flipper-Starnew) -- Universal Intercom Keys  
 [FlipperZero-Goodies](https://github.com/wetox-team/flipperzero-goodies) -- Intercom keys, scripts.  
 [Flipper-IRDB](https://github.com/Lucaslhm/Flipper-IRDB) -- IR dumps  
 [XBox IR Controller](https://github.com/gebeto/flipper-xbox-controller) -- Control XBox One via IR  
@@ -101,19 +119,18 @@ My collection of IR, Sub-Ghz, remotes, links and other misc files related to the
 ## BadUSB Stuff
 
 [Adding new keyboard layouts](https://github.com/dummy-decoy/flipperzero_badusb_kl) -- Keyboard layout file generator  
-[UNC0V3R3D BadUSB collection](https://github.com/UNC0V3R3D/Flipper_Zero-BadUsb) -- The Ultimate Flipper Zero Badusb Collection  
 [FalsePhilosophers Flipper BadUSB](https://github.com/FalsePhilosopher/badusb) -- Flipper zero community ducky payload repo.  
 [Generic BadUSB Payloads](https://github.com/nocomp/Flipper_Zero_Badusb_hack5_payloads) -- Hak5 Ducky script payloads  
 [USB HID Autofire](https://github.com/pbek/usb_hid_autofire) -- Send left clicks as a USB HID Device  
 [Mouse Jiggler](https://github.com/MuddledBox/flipperzero-firmware/tree/Mouse_Jiggler/applications/mouse_jiggler) -- Mouse Jiggler  
 [FlipperZero-USB-Keyboard](https://github.com/huuck/FlipperZeroUSBKeyboard) -- A refactor of the BT remote keyboard to work over USB.  
-[BadUSB Keyboard Converter](http://helppox.com/badusbconvert.html) -- Payload converter for non-US keyboard layouts  
+[BadUSB Keyboard Converter](https://helppox.com/badusbconvert.html) -- Payload converter for non-US keyboard layouts  
 
 
 ## Off-device & Debugging
 
 [Official Web Interface](https://lab.flipper.net/) -- Web interface to interact with Flipper, including Paint and SUB/IR analyzer.  
-[qFlipper](https://flipperzero.one/update) -- Official cross-platform desktop app: firmware updates, file manager, and screen streaming.  
+[qFlipper](https://flipper.net/pages/downloads) -- Official cross-platform desktop app: firmware updates, file manager, and screen streaming.  
 [Flipper Apps Catalog](https://lab.flipper.net/apps) -- Official catalog of installable Flipper apps (.fap), browsable and installable over the web.  
 
 
